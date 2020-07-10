@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/optFeedBack"
+        android:icon="@drawable/ic_send"
+        android:title="Send Feedback"
+     />
+
+    <item
+        android:id="@+id/optAboutUs"
+        android:icon="@drawable/ic_about_us"
+        android:title="About Us"
+        />
+    <item
+        android:id="@+id/optLogout"
+        android:icon="@drawable/ic_key"
+        android:title="Logout"
+        />
+
+</menu>

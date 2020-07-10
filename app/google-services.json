@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "623913208051",
+    "firebase_url": "https://classmanagementsystem.firebaseio.com",
+    "project_id": "classmanagementsystem",
+    "storage_bucket": "classmanagementsystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623913208051:android:4f4f18451d3e4340",
+        "android_client_info": {
+          "package_name": "com.mcubes.aamamun.classmanagementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623913208051-neuh8v6hut5u607eilpsse8i0t3h9s07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mcubes.aamamun.classmanagementsystem",
+            "certificate_hash": "3473434c009ebe07a0847809b5a645883b6be654"
+          }
+        },
+        {
+          "client_id": "623913208051-ddud0k5frt4lj4rvaof8hdnb2ugvno1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGaWXK7weTIH21N95IkFUE38PyF2MxD0w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623913208051-1botbosn5oakmniovinug2ru9m4rcint.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

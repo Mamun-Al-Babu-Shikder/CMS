@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="0dp"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_shp2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Panel"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            />
+
+
+        <EditText
+            android:id="@+id/editValue"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/round_shp1"
+            android:hint="Enter update value"
+            android:textSize="13sp"
+            android:inputType="textPersonName"
+            />
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:background="#dfdddd"
+            android:layout_height="1px"/>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            >
+
+
+            <Button
+                android:id="@+id/cancleBtn"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Cancel"
+                android:textSize="14sp"
+                android:textColor="#de0736"
+                android:background="@drawable/left_btn_shp"
+                />
+
+            <LinearLayout
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#dfdddd"
+                />
+
+            <Button
+                android:id="@+id/doneBtn"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Done"
+                android:textSize="14sp"
+                android:textColor="#7632ca"
+                android:background="@drawable/right_btn_shp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+

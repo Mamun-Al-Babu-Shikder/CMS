@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here.
+        <item name="colorPrimary">#5982e1</item>
+        <item name="colorPrimaryDark">#4c75d4</item>
+        <item name="colorAccent">#5982e1</item>-->
+
+        <item name="colorPrimary">#9468ef</item>
+        <item name="colorPrimaryDark">#8357e1</item>
+        <item name="colorAccent">#9365f2</item>
+    </style>
+
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#f95469</item>
+        <item name="colorPrimaryDark">#ef4359</item>
+        <item name="colorAccent">#fa6679</item>
+    </style>
+
+    <style name="MyClassRoom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#9A73F3</item>
+        <item name="colorPrimaryDark">#8b60ef</item>
+        <item name="colorAccent">#9A73F3</item>
+    </style>
+
+    <style name="TeacherClassRoom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#5982e1</item>
+        <item name="colorPrimaryDark">#4c75d4</item>
+        <item name="colorAccent">#5982e1</item>
+    </style>
+
+    <style name="UserProfie" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#FF7052</item>
+        <item name="colorPrimaryDark">#f4694c</item>
+        <item name="colorAccent">#FF7052</item>
+    </style>
+
+
+</resources>

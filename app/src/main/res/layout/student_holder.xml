@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    
+    <LinearLayout
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/clk_bk5"
+        >
+
+
+
+
+
+        <net.karthikraj.shapesimage.ShapesImage
+            android:id="@+id/sImg"
+            android:layout_marginLeft="8dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:shape="circle"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_user"
+            />
+
+
+        
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/sId"
+                    android:layout_marginRight="15dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="ID of Student"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+
+                    />
+
+
+
+
+                <LinearLayout
+
+                    android:visibility="visible"
+                    android:paddingRight="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <LinearLayout
+                        android:id="@+id/profileIndicatorAlpha"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/cir_shp_alpha3"
+                        >
+
+                        <ImageView
+                            android:id="@+id/profileIndicator"
+                            android:padding="3dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cir_shp3"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/sName"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student's Name"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cdcdcd"/>
+
+
+
+</LinearLayout>

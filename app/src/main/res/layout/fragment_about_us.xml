@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.mcubes.aamamun.classmanagementsystem.AboutUs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        >
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:background="@drawable/mnu_btn"
+            android:onClick="optionMenuBtn"
+            />
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+
+
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CMS"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+
+
+                <ImageView
+                    android:visibility="visible"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cmslogo"
+                    />
+
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLASS MANAGEMENT SYSTEM"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="version 1.0"
+                android:textSize="15sp"
+                />
+
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="100dp"
+                android:layout_height="1px"
+                android:background="#cdcdcd"
+                />
+
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Create your class and continue your class with your student with study plan, class attendance sheet, document etc. Let's enjoy the CMS (Class Management System)."
+                />
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/mcubes_logo"/>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developed by"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mCubeS IT Limited"
+                android:textSize="14sp"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="140dp"
+                android:layout_height="1px"
+                android:background="#cdcdcd"
+                />
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/gmailBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/gmail_btn"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="G+"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/fbBtn"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/fb_btn"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="f"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/twitterBtn"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/twitter_btn"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/twitter"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/mbstu_radio"/>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sponsored by"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MBSTU radio"
+                android:textSize="14sp"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="140dp"
+                android:layout_height="1px"
+                android:background="#cdcdcd"
+                />
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:id="@+id/gotoMbstuRadio"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="www.facebook.com/mbsturadio"
+                android:enabled="true"
+                android:textColor="#2244ed"
+                android:background="@drawable/clk_bk5"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

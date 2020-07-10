@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+
+
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            >
+
+            <net.karthikraj.shapesimage.ShapesImage
+                android:id="@+id/img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/default_user"
+                android:scaleType="centerCrop"
+                app:shape="circle"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:paddingLeft="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Commenter Name"
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:text="date and time of comment"
+                />
+
+
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="01dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:text="Comment here...."/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/copy"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Copy"
+                    android:enabled="true"
+                    android:textColor="#4E64D8"
+                    android:textSize="10sp"
+                    android:background="@drawable/round_shp7"
+                    />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="1px"
+                    android:layout_height="10dp"
+                    android:background="#969696"/>
+
+                <TextView
+                    android:id="@+id/edit"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:background="@drawable/round_shp7"
+                    android:enabled="false"
+                    android:textColor="#4E64D8"
+                    android:textSize="10sp"
+                    />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="1px"
+                    android:layout_height="10dp"
+                    android:background="#969696"/>
+
+                <TextView
+                    android:id="@+id/delete"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:background="@drawable/round_shp7"
+                    android:enabled="false"
+                    android:textColor="#4E64D8"
+                    android:textSize="10sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

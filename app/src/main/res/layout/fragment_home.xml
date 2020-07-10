@@ -1,0 +1,996 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mcubes.aamamun.classmanagementsystem.HomeFragment"
+    android:background="#ffffff"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        >
+
+
+        <Button
+            android:layout_marginLeft="7dp"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:background="@drawable/mnu_btn"
+            android:onClick="optionMenuBtn"
+            />
+
+
+        <TextView
+            android:layout_marginLeft="0dp"
+            android:paddingRight="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+
+        <LinearLayout
+            android:paddingBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:gravity="center_horizontal"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_marginTop="05dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CLASS MANAGEMENT SYSTEM"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#fff"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A complete tools for maintain class. Access 'CMS' as a Teacher OR Student in single account. Create your class or involved your Teacher class."
+                    android:textColor="#ffffff"
+                    android:gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+
+
+
+                <ImageView
+
+                    android:visibility="visible"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:src="@drawable/cms_bk1"/>
+
+
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="CLASS ROOM"
+                    android:textSize="18sp"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="160dp"
+                    android:layout_height="1px"
+                    android:background="#cdcdcd"/>
+
+
+
+                <TextView
+
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#7f8183"
+                    android:text="There have two types of class room. One of them is 'My Class Room' another is Teacher's Class Room. You can create your class room at 'My Class Room' with 'COURSE CODE' and 'COURSE TITLE'. After creating a class room you get a class 'ID' that identify your class. If any student want to connect with your class then that students' need this unique class id (CID)."
+                    />
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#7f8183"
+                    android:text="On other hand if you want to join any class you must need that class id."
+                    />
+
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        >
+
+
+                        <RelativeLayout
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/pb_cir_shp"
+                            >
+
+
+                            <ProgressBar
+                                android:id="@+id/percentPb"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                                android:progressDrawable="@drawable/pb_cir_shp2"
+                                android:progress="0"
+                                android:max="100"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:id="@+id/percentViw"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0%"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#FE82A7"
+                                    />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:layout_marginTop="7dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="YOUR CLASS ROOM"
+                            android:textColor="#969696"
+                            android:textSize="10sp"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="0dp"
+                        android:layout_width="1px"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="match_parent"
+                        android:background="#cdcdcd"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        >
+
+
+                        <RelativeLayout
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/pb_cir_shp"
+                            >
+
+
+                            <ProgressBar
+                                android:id="@+id/percentPb2"
+                                android:layout_width="82dp"
+                                android:layout_height="82dp"
+                                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                                android:progressDrawable="@drawable/pb_cir_shp3"
+                                android:progress="0"
+                                android:max="100"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:id="@+id/percentViw2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0%"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#D669DD"
+                                    />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JOINED CLASS ROOM"
+                            android:textColor="#969696"
+                            android:textSize="10sp"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Activity As Teacher"
+                    android:textSize="16sp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="160dp"
+                    android:layout_height="1px"
+                    android:background="#cdcdcd"/>
+
+
+
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/cir_shp_alpha2"
+                        >
+
+                        <ImageView
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cir_shp2"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Create Class"
+                            android:textColor="#7f8183"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="At first create your class room with course code and course title and notice that you get a class id that is called CID. "
+                            android:textColor="#7f8183"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/cir_shp_alpha2"
+                        >
+
+                        <ImageView
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cir_shp2"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Student"
+                            android:textColor="#7f8183"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="You can add students with two way. One of them entry method, where you should enter student 'ID', 'Name', 'Gender' and 'Phone number' then save it. Otherwise you can share your (CID) class id with your students. Your students send you a request and you should acept that."
+                            android:textColor="#7f8183"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/cir_shp_alpha2"
+                        >
+
+                        <ImageView
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cir_shp2"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Keep Attendance"
+                            android:textColor="#7f8183"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#7f8183"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:text="Create attendance sheet with date and make sure the student attended your class that day. You can get attendance percentage according to attendance sheet."
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/cir_shp_alpha2"
+                        >
+
+                        <ImageView
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cir_shp2"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Share Study Plan"
+                            android:textColor="#7f8183"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#7f8183"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:text="You can share your study plan with your students via post. You can also share Image file and any kind of web address link."
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/cir_shp_alpha2"
+                        >
+
+                        <ImageView
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cir_shp2"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Share Files and Google drive"
+                            android:textColor="#7f8183"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#7f8183"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:text="To upload your lecture or any other files like doc, docx, pdf, txt etc select  'Files' option menu or share Google Drive link using 'Google Drive' option."
+
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Activity As Student"
+                    android:textSize="16sp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="160dp"
+                    android:layout_height="1px"
+                    android:background="#cdcdcd"/>
+
+
+
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/cir_shp_alpha3"
+                        >
+
+                        <ImageView
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cir_shp3"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Join to Class"
+                            android:textColor="#7f8183"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#7f8183"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:text="Collect class id (CID) from your teacher then send a request to your teacher using this CID. After accept your request you can visit the class."
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/cir_shp_alpha3"
+                        >
+
+                        <ImageView
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cir_shp3"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Check Attendance Info"
+                            android:textColor="#7f8183"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#7f8183"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:text="You can check your attendance information using 'Attendance Info' option menu."
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/cir_shp_alpha3"
+                        >
+
+                        <ImageView
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cir_shp3"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Follow"
+                            android:textColor="#7f8183"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#7f8183"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:text="Follow your teacher to know about study plan that is published by post. You can also post and share your mind."
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/cir_shp_alpha3"
+                        >
+
+                        <ImageView
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cir_shp3"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Collect Lecture"
+                            android:textColor="#7f8183"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#7f8183"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:text="Collect the lecture files that are uploaded by your teacher. "
+                           />
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Developed by mCubeS IT Limited"
+                    android:textSize="11sp"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="180dp"
+                    android:layout_height="1px"
+                    android:background="#cdcdcd"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center|bottom"
+            android:visibility="visible"
+            >
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3578920841741120/5160546666">
+            </com.google.android.gms.ads.AdView>
+
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

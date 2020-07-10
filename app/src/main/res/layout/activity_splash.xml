@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="com.mcubes.aamamun.classmanagementsystem.SplashActivity"
+    android:background="#ffffff"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/cir_shp_alpha3"/>
+
+
+    <ImageView
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/cir_shp_alpha2"/>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginLeft="-75dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="#1e6363e4"
+        android:rotation="-50"
+        />
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_marginTop="70dp"
+                android:layout_gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:text="CMS"
+                    />
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="2px"
+                    android:background="#ff5593"
+
+                    />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:src="@drawable/cms_bk1"
+                    />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:text="CLASS MANAGEMENT SYATEM"
+                    />
+
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:text="version : 1.0"
+                    />
+
+
+                <ProgressBar
+                    android:layout_marginTop="20dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#b4b4b4"
+                    android:textSize="10sp"
+                    android:text="Powered by mCubeS Limited"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

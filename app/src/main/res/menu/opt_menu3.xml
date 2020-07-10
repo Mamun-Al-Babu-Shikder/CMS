@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:enabled="true"
+        android:checkableBehavior="single">
+
+        <item android:id="@+id/opt_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home"
+            android:checked="true"
+            />
+
+        <item android:id="@+id/opt_post"
+            android:title="Post"
+            android:icon="@drawable/ic_post"/>
+
+        <item android:id="@+id/opt_attendance_info"
+            android:title="Attendance Info"
+            android:icon="@drawable/ic_attendance"/>
+
+
+        <item android:id="@+id/opt_teacher_info"
+            android:title="Class Teacher"
+            android:icon="@drawable/ic_person"/>
+
+
+        <item android:id="@+id/opt_student"
+            android:title="Students"
+            android:icon="@drawable/ic_student"/>
+
+    </group>
+
+
+
+    <item android:title="Storage">
+
+
+        <menu android:checkableBehavior="single"
+            >
+
+            <group android:checkableBehavior="single">
+
+                <item android:id="@+id/opt_files"
+                    android:title="Files"
+                    android:icon="@drawable/ic_folder"/>
+
+                <item android:id="@+id/opt_google_drive"
+                    android:title="Google Drive"
+                    android:icon="@drawable/ic_google_drive"/>
+
+
+            </group>
+
+
+        </menu>
+
+
+    </item>
+
+
+
+
+
+</menu>

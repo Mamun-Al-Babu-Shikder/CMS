@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:banolly="http://schemas.android.com/tools">
+
+    <item android:id="@+id/opt_call"
+        android:title="Call"
+        android:icon="@drawable/call_icon"
+        banolly:showAsAction="always"
+        />
+
+    <item android:id="@+id/opt_send_sms"
+        android:title="Send Sms"
+        android:icon="@drawable/icon_sms"
+        banolly:showAsAction="always"
+        />
+
+
+</menu>
